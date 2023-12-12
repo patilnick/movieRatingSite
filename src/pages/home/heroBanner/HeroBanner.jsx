@@ -17,7 +17,7 @@ const HeroBanner = () => {
             navigate(`/search/${query}`)
         }
     }
-    const {data,loading} = useFetch("/movie/upcoming");
+    const {data,loading} = useFetch("/movie/upcoming?");
     const { url } = useSelector((state)=>state.home)
     useEffect(() =>{
       const bg = url.backdrop + data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path;
