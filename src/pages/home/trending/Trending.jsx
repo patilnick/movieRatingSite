@@ -4,7 +4,7 @@ import SwitchTabs from '../../../components/switchTabs/SwitchTabs'
 import useFetch from '../../../hooks/useFetch';
 import Carousel from '../../../components/carousel/Carousel';
 
-const trending = () => {
+const Trending = () => {
 
   const [endPoint,setEndPoint] = useState("day");
 
@@ -26,4 +26,4 @@ const trending = () => {
   )
 }
 
-export default trending
+export default Trending
